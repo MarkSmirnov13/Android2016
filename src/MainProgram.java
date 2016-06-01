@@ -7,14 +7,8 @@ public class MainProgram {
 
     public static void main(String[] args) {
         IntegerValue value = new IntegerValue();
-        int name = 0;
-        //value.setValue(5);
-        //System.out.print("value = "+value.getValue());
-        Scanner in = new Scanner(System.in);
-        System.out.print("число: ");
-        name = in.nextInt();
-        //value.setValue(name);
-        Printer printer = new Printer();
-        printer.Printer();
+        Printer printer = new Printer(value);
+        value.setValue(5);
+        value.setValue(10);
     }
 }
